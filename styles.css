@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.rogue-styles {
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #333;
+}
+
+nav a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+main .about-us, main .customer-reviews {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+}
+
+.customer-reviews .review p:nth-child(2n) {
+    font-size: 24px;
+    color: #f5ba15;
+}
+
+.star-rating {
+    display: inline-block;
+    border: 1px goldenrod;
+    padding: 2px;
+}
+
+.green-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+/* Product List Section */
+main {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Product Styling */
+.product {
+    flex: 1 0 calc(50% - 40px); /* Adjusted to fill 2 products per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-sizing: border-box; /* To include padding and border in element's total width and height */
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.product:hover {
+    background-color: #ffffff;
+}
+
+/* "Add to Cart" Button */
+.product button {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #45A049;
+}
+
+#sort-options {
+    background-color: #007BFF; /* Blue color */
+    padding: 10px;
+    border-radius: 5px;
+    color: white; /* White text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add space at the top */
+}
+
+#sort-options:hover {
+    background-color: #0069d9; /* Darker blue color on hover */
+}
+
+/* Contact Information Section */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Contact Methods */
+.contact-method {
+    background-color: #ddd;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+/* Social Media Links */
+.contact-info p {
+    margin: 0; /* Removes space between lines */
+}
+
+/* Social Media Links Hover Effect */
+a:hover {
+    color: #007BFF;
+}
+
+/* Login Form Section */
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    height: 300px; /* Adjust this value as needed */
+    position: relative;
+}
+
+/* Form Fields */
+form label {
+    display: block;
+    margin: 10px;
+}
+
+form input[type="text"], input[type="password"] {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Placeholder Text */
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+/* Login Button */
+form input[type="submit"] {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    opacity: 0.5;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45A049;
+    opacity: 1;
+}
+
+/* Signup Link */
+.login-form p{
+    color: black;
+    margin: 10px;
+    position: absolute; /* Position the element absolutely within the main container */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Position from the left */
+    right: 0; /* Position from the right */
+    text-align: center;
+    align-self: flex-end;
+}
+
+main p a {
+    color: #007BFF; /* Make the link text blue */
+}
+
+.login-form p a:hover{
+    text-decoration: underline;
+}
